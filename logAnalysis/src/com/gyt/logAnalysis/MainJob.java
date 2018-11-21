@@ -66,7 +66,7 @@ public class MainJob {
 				OnlyReducer.class, args[2], args[3]);
 		if (nameFlag) { // 按市、省、国家提取
 			mainJob.Work("city, province and county", Job.getInstance(configuration), mainJob, DetailMapper.class, 
-					OnlyReducer.class, args[3], args[4]);
+					OnlyReducer.class, args[3], args[4]); // 重点：输入目录为第二个job的输出目录
 		}
 	}
 }
